@@ -13,7 +13,7 @@ This repository is for the paper "Multi-Granularity Aggregation Network for Remo
 ### Environment
 
 ```
-git clone https://github.com/sfengpeng/MGANet.git
+git clone https://github.com/CVL-hub/MGANet
 cd MGANet
 
 conda create -n MGANet python=3.9
