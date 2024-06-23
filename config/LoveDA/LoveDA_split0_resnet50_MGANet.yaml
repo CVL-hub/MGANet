@@ -1,0 +1,91 @@
+Data:
+  data_root: ./data/LoveDA
+  base_data_root: ./data/base_annotation/pascal/
+  train_list: ./lists/LoveDA/train.txt
+  val_list: ./lists/LoveDA/val.txt
+  classes: 2
+
+
+Train:
+  # Aug
+  train_h: 473
+  train_w: 473
+  val_size: 473
+  scale_min: 0.9  # minimum random scale
+  scale_max: 1.1 # maximum random scale
+  rotate_min: -10  # minimum random rotate
+  rotate_max: 10  # maximum random rotate
+  ignore_label: 255
+  padding_label: 255
+  ppm_scales: [1.0]
+  # Dataset & Mode
+  methods: 'Multi-Similarity-MFG'
+  aplha: 0.7
+  beta: 0.3
+  count: 3
+  split: 1
+  shot: 5
+  max_sp: 5
+  train_iter: 10
+  eval_iter: 5
+  data_set: 'LoveDA'
+  use_split_coco: False # True means FWB setting
+  # Optimizer
+  batch_size: 4 # batch size for training
+  base_lr: 0.0003
+  epochs: 200
+  start_epoch: 0
+  stop_interval: 200 # stop when the best result is not updated for "stop_interval" epochs
+  index_split: -1 # index for determining the params group with 10x learning rate
+  power: 0.9 # 0 means no decay
+  momentum: 0.9
+  weight_decay: 0.0001
+  warmup: False
+  # Viz & Save & Resume
+  print_freq: 10
+  save_freq: 50
+  resume:
+  # Validate
+  evaluate: True
+  SubEpoch_val: True # val at the half epoch
+  fix_random_seed_val: True
+  batch_size_val: 1
+  resized_val: True
+  ori_resize: True  # use original label for evaluation
+  # Else
+  workers: 8
+  fix_bn: True
+  manual_seed: 321
+  test_seed: 321
+  seed_deterministic: False
+  zoom_factor: 8  # zoom factor for final prediction during training, be in [1, 2, 4, 8]
+
+Method:
+  layers: 101  # backbone layers
+  vgg: True #choose backbone
+  aux_weight: 1.0 # aux_loss weight
+  thresh_fp: 0.7  # CSRM parameter of Foraground
+  thresh_bp: 0.6  # CSRM parameter of Foraground
+  fuse_select: True # CSRM parameter
+  start_loss: 0.8   # KMS start
+
+# for testing
+Test_Finetune:
+  weight: "vgg/背景+slotattention/LoveDA/5-shot/split1-35.03/train5_epoch_6_0.3459.pth"  # checkpoint
+  proto_dict_path: "vgg/背景+slotattention/LoveDA/5-shot/split1-35.03/snapshotproto_dict.pth" # the path of the KMS dict (only FP for testing)
+  ann_type: 'mask' # mask/bbox
+
+
+
+## deprecated multi-processing training
+# Distributed:
+#   dist_url: tcp://127.0.0.1:6789
+#   dist_backend: 'nccl'
+#   multiprocessing_distributed: False
+#   world_size: 1
+#   rank: 0
+#   use_apex: False
+#   opt_level: 'O0'
+#   keep_batchnorm_fp32:
+#   loss_scale:
+
