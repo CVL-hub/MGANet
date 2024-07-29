@@ -4,7 +4,7 @@ This repository is for the paper "Multi-Granularity Aggregation Network for Remo
 
 ## Framework
 
-![framework](framework.pdf)
+![framework](屏幕截图 2024-07-29 232501.png)
 
 
 
