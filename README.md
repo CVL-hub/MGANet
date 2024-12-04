@@ -93,7 +93,6 @@ If you find this project useful, please consider giving a star ⭐ and citation 
   volume={},
   number={},
   pages={1-1},
-  keywords={Remote sensing;Prototypes;Semantic segmentation;Airplanes;Semantics;Training;Feature extraction;Correlation;Sensors;Few shot learning;Few-shot segmentation;multi-granularity;remote sensing;slot attention;background context;intra-class inconsistency},
   doi={10.1109/TGRS.2024.3503273}}
 
 ```
