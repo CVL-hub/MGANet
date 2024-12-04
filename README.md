@@ -1,7 +1,7 @@
 # Multi-Granularity Aggregation Network for Remote Sensing Few-Shot Segmentation
 
-This repository is for the paper "Multi-Granularity Aggregation Network for Remote Sensing Few-Shot Segmentation"
-
+This repository is for the paper "Multi-Granularity Aggregation Network for Remote Sensing Few-Shot Segmentation" [TGRS 2024]
+Shi-Feng Peng, Guo-Sen Xie, Fang Zhao, Xiangbo Shu, Qingshan Liu
 ## Framework
 
 ![framework](framework1.png)
