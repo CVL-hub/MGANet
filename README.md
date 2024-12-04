@@ -1,5 +1,6 @@
 # Multi-Granularity Aggregation Network for Remote Sensing Few-Shot Segmentation [TGRS 2024]
-Shi-Feng Peng, Guo-Sen Xie, Fang Zhao, Xiangbo Shu, Qingshan Liu
+Shi-Feng Peng, Guo-Sen Xie, Fang Zhao, Xiangbo Shu, Qingshan Liu.
+Welcome to the official PyTorch implementation repository of our paper [Multi-Granularity Aggregation Network for Remote Sensing Few-Shot Segmentation](https://ieeexplore.ieee.org/abstract/document/10758690), accepted to TGRS 2024.
 
 
 ## Framework
