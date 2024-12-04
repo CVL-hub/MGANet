@@ -78,3 +78,22 @@ MGANet
 ## Related Repositories
 
 This repository is built upon the foundations of [MSANet](https://github.com/AIVResearch/MSANet), [Slot Attention](https://github.com/google-research/google-research/tree/master/slot_attention), and [DMNet](https://github.com/HanboBizl/DMNet?tab=readme-ov-file). We are very grateful for their work!
+
+
+## Citation
+
+If you find this project useful, please consider giving a star ⭐ and citation 📚:
+
+```
+@ARTICLE{10758690,
+  author={Peng, Shi-Feng and Xie, Guo-Sen and Zhao, Fang and Shu, Xiangbo and Liu, Qingshan},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={Multi-Granularity Aggregation Network for Remote Sensing Few-Shot Segmentation}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Remote sensing;Prototypes;Semantic segmentation;Airplanes;Semantics;Training;Feature extraction;Correlation;Sensors;Few shot learning;Few-shot segmentation;multi-granularity;remote sensing;slot attention;background context;intra-class inconsistency},
+  doi={10.1109/TGRS.2024.3503273}}
+
+```
